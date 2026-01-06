@@ -32,6 +32,9 @@
 /* main style */
 header {
   background-color: #fff8f3;
+  background: url("../images/developer.png"), url("../images/header_bg.png"), #fff8f3;
+  background-position: top left, bottom right;
+  background-repeat: no-repeat;
   padding-top: 50px;
 }
 
@@ -89,4 +92,9 @@ nav .menu a {
   color: #757575;
   line-height: 30px;
   margin-bottom: 30px;
+}
+
+#banner .banner-image {
+  max-width: 585px;
+  vertical-align: middle;
 }
