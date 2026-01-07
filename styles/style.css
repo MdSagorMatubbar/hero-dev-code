@@ -29,6 +29,23 @@
   cursor: pointer;
 }
 
+#banner .banner-content .btn-contact {
+  background-color: white;
+  border: 1px solid #FD6E0A;
+  color: #FD6E0A;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 18px 35px;
+}
+#banner .banner-content .btn-contact:hover{
+  background-color: #FD6E0A;
+  border: 1px solid #FD6E0A;
+  color: white;
+
+}
+
 .section-heading {
   max-width: 827px;
   text-align: center;
@@ -38,6 +55,7 @@
 .section-heading h2 {
   font-size: 35px;
   margin-bottom: 30px;
+  color: #181818;
 }
 
 .section-heading p {
@@ -55,7 +73,7 @@
 header {
   background-color: #fff8f3;
   background: url("../images/developer.png"), url("../images/header_bg.png"), #fff8f3;
-  background-position: top left, bottom right;
+  background-position: 23px 38px, bottom right;
   background-repeat: no-repeat;
   padding-top: 50px;
 }
@@ -151,6 +169,7 @@ nav .menu a {
 
 .about-info .info-card h4 {
   font-size: 20px;
+  color: #474747;
 }
 
 #skills .skills-container {
