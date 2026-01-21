@@ -29,6 +29,12 @@
   cursor: pointer;
 }
 
+.btn-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
 #banner .banner-content .btn-contact {
   background-color: white;
   border: 1px solid #FD6E0A;
@@ -186,7 +192,7 @@ nav .menu a {
 .skill-box .skill-card {
   padding: 30px;
   border-radius: 8px;
-  box-shadow: 0 6px 50px 0 #0000001b;
+  box-shadow: 0 6px 50px 0 #0000003c;
   max-width: 267px;
 }
 
@@ -298,4 +304,135 @@ footer .footer-container {
   border: none;
   border-radius: 5px;
   color: #757575;
+}
+
+
+
+.hide {
+  display: none !important;
+}
+
+
+
+/* -----------------------Small Device-------------------------- */
+@media screen and (max-width: 576px) {
+/* --------For Navbar Section-------- */
+nav {
+  flex-direction: column;
+  gap: 20px;
+}
+
+nav .menu {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#banner {
+  margin: 20px;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+}
+
+#banner .banner-image img {
+  width: 100%;
+}
+
+#banner .banner-content h2{
+  font-size: 35px;
+}
+#banner .banner-content h1 {
+  font-size: 45px;
+}
+
+.btn-group {
+  justify-content: center;
+}
+
+header {
+    background: url(../images/header_bg.png), #fff8f3;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: 150%;
+}
+
+
+/* ---------For About Section-------- */
+  #about .about-container {
+  padding: 20px;
+}
+
+#about .about-container .about-info {
+  flex-direction: column;
+  gap: 40px;
+}
+
+/* --------For Skills Section------- */
+  #skills .skills-container {
+  width: 95%;
+}
+
+.section-heading h2 {
+    font-size: 30px;
+}
+  
+  #about, #skills, #resume {
+  padding-top: 60px;
+}
+
+.skills-container .skill-box {
+  flex-direction: column;
+  text-align: center;
+}
+.skill-box .skill-card {
+  max-width: 100%;
+}
+
+.skill-card img {
+  margin-bottom: 5px;
+}
+
+.skill-card p {
+  font-size: 19px;
+  line-height: 34px;
+  margin-bottom: 28px;
+}
+
+/* ---------For Resume Section-------- */
+#resume .resume-container {
+  flex-direction: column;
+  margin-top: 60px;
+}
+
+.resume-card {
+  margin-right: 5px;
+}
+
+
+/* ---------For Footer Section-------- */
+footer .footer-container {
+  flex-direction: column;
+  margin: 0;
+  width: 100%;
+}
+
+footer {
+  width: 100%;
+  margin-top: 30px;
+  padding:130 0;
+}
+
+.footer-container .social {
+  width: 100%;
+  text-align: center;
+}
+
+form {
+  text-align: center;
+}
+
+.footer-container .form input[type="text"], .footer-container .form textarea {
+  width: 96%;
+}
+
 }
